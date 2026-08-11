@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 40px;
+        }
+
+        #btn-pokemon {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #ffcb05;
+            border: 2px solid #2a75bb;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        #btn-pokemon:hover {
+            background-color: #ffd83d;
+        }
+
+        #progressX {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* สไตล์กลางของทุกการ์ด */
+        .pokemon-card {
+            position: relative;
+            width: 160px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .pokemon-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .pokemon-card img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .pokemon-card h3 {
+            margin: 8px 0 0 0;
+            text-transform: capitalize;
+            color: #2a75bb;
+        }
+
+        .pokemon-card .btn-delete {
+            position: absolute;
+            top: 5px;
+            right: 8px;
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            color: #e74c3c;
+        }
+
+        .pokemon-card .btn-delete:hover {
+            color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div id="progressX"></div>
+    <button id="btn-pokemon">find new pokemon</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
